@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "description": "Cloning Practice",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Hyun",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.9.0",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.5",
-    "express": "^4.17.1"
+    "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3",
+    "pug": "^2.0.4"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node init.js"
   }
 }
