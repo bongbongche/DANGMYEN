@@ -1,0 +1,52 @@
+nav.nav
+    .nav__column
+        .nav__logo
+            a(href=routes.home)
+                img(src="http://dangmyen.co.kr/images/main/logo.png")
+    .nav__column
+        .nav__menu
+            ul
+                li
+                    a(href=`/company${routes.ceo}`) 회사소개
+                    ul
+                        li
+                            a(href=`/company${routes.ceo}`) CEO 인사말
+                        li
+                            a(href=`/company${routes.history}`) 회사연혁
+                        li
+                            a(href=`/company${routes.certification}`) 표창/인증/특허
+                        li
+                            a(href=`/company${routes.local}`) 오시는 길
+                li
+                    a(href=`/intro${routes.brand}`) 푸름찬
+                    ul
+                        li
+                            a(href=`/intro${routes.brand}`) 브랜드 소개
+                        li
+                            a(href=`/intro${routes.prd_process}`) 제조공정
+                li
+                    a(href=`/product${routes.prd_01}`) 제품소개
+                     ul
+                        li
+                            a(href=`/product${routes.prd_01}`) 푸름찬 당면
+                        li
+                            a(href=`/product${routes.prd_02}`) 자매품
+                li
+                    a(href=`/board${routes.notice}`) 고객센터
+                    ul
+                        li
+                            a(href=`/board${routes.notice}`) 공지사항
+                        li
+                            a(href=`/board${routes.ask}`) 고객문의
+                        li
+                            a(href=`/board${routes.news}`) 보도자료
+    .nav__column
+        .nav__button
+            .button-catalogue
+                a(href="#")
+                    i.fas.fa-book 카탈로그
+            .button-modal
+                a(href="#")
+                    i.fas.fa-bars
+// 카탈로그 pdf 다운로드
+// 모달창 만들기

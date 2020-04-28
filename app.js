@@ -2,6 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import helmet from "helmet";
 import routes from "./routes";
+import { localsMiddlewares } from "./middlewares";
 import globalRouter from "./routers/globalRouter";
 import companyRouter from "./routers/companyRouter";
 import introRouter from "./routers/introRouter";
@@ -13,6 +14,7 @@ const app = express();
 app.use(helmet());
 app.set("view engine", "pug");
 app.use(morgan("dev"));
+app.use(localsMiddlewares);
 
 app.use(routes.home, globalRouter);
 app.use(routes.company, companyRouter);
