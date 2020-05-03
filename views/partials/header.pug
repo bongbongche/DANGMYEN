@@ -24,55 +24,61 @@ header
                         span CHN
     p.line
     nav.main-nav
-        .main-nav__wrapper
-            .main-nav__column
-                .main-nav__logo
-                    a(href=routes.home)
-                        img(src="http://dangmyen.co.kr/images/main/logo.png")
-            .main-nav__column
-                .main-nav__menu
-                    ul
+        .main-nav__column
+            .main-nav__logo
+                a(href=routes.home)
+                    img(src="http://dangmyen.co.kr/images/main/logo.png")
+        .main-nav__column
+            .main-nav__menu
+                .menu__item
+                    a.item__name(href=`/company${routes.ceo}`, data-index="1") 회사소개
+                    ul.menu__sub
+                        p.line-blue(data-index="1")
                         li
-                            a(href=`/company${routes.ceo}`) 회사소개
-                            ul
-                                li
-                                    a(href=`/company${routes.ceo}`) CEO 인사말
-                                li
-                                    a(href=`/company${routes.history}`) 회사연혁
-                                li
-                                    a(href=`/company${routes.certification}`) 표창/인증/특허
-                                li
-                                    a(href=`/company${routes.local}`) 오시는 길
+                            a(href=`/company${routes.ceo}`) CEO 인사말
                         li
-                            a(href=`/intro${routes.brand}`) 푸름찬
-                            ul
-                                li
-                                    a(href=`/intro${routes.brand}`) 브랜드 소개
-                                li
-                                    a(href=`/intro${routes.prd_process}`) 제조공정
+                            a(href=`/company${routes.history}`) 회사연혁
                         li
-                            a(href=`/product${routes.prd_01}`) 제품소개
-                            ul
-                                li
-                                    a(href=`/product${routes.prd_01}`) 푸름찬 당면
-                                li
-                                    a(href=`/product${routes.prd_02}`) 자매품
+                            a(href=`/company${routes.certification}`) 표창/인증/특허
                         li
-                            a(href=`/board${routes.notice}`) 고객센터
-                            ul
-                                li
-                                    a(href=`/board${routes.notice}`) 공지사항
-                                li
-                                    a(href=`/board${routes.ask}`) 고객문의
-                                li
-                                    a(href=`/board${routes.news}`) 보도자료
-            .main-nav__column
-                .main-nav__button
-                    .button-catalogue
-                        a(href="#")
-                            i.fas.fa-book 카탈로그
-                    .button-modal
-                        a(href="#")
-                            i.fas.fa-bars
+                            a(href=`/company${routes.local}`) 오시는 길
+                    p.line-ver
+                .menu__item
+                    a.item__name(href=`/intro${routes.brand}`, data-index="2") 푸름찬
+                    ul.menu__sub
+                        p.line-blue(data-index="2")
+                        li
+                            a(href=`/intro${routes.brand}`) 브랜드 소개
+                        li
+                            a(href=`/intro${routes.prd_process}`) 제조공정
+                    p.line-ver
+                .menu__item
+                    a.item__name(href=`/product${routes.prd_01}`, data-index="3") 제품소개
+                    ul.menu__sub
+                        p.line-blue(data-index="3")
+                        li
+                            a(href=`/product${routes.prd_01}`) 푸름찬 당면
+                        li
+                            a(href=`/product${routes.prd_02}`) 자매품
+                    p.line-ver
+                .menu__item
+                    a.item__name(href=`/board${routes.notice}`, data-index="4") 고객센터
+                    ul.menu__sub
+                        p.line-blue(data-index="4")
+                        li
+                            a(href=`/board${routes.notice}`) 공지사항
+                        li
+                            a(href=`/board${routes.ask}`) 고객문의
+                        li
+                            a(href=`/board${routes.news}`) 보도자료
+        .main-nav__column
+            .main-nav__button
+                    a(href="#")
+                        i.fas.fa-book
+                        span 카달로그
+                    a(href="#")
+                        i.fas.fa-bars
+    p.line
+    .menu__sub_bg
 // 카탈로그 pdf 다운로드
 // 모달창 만들기
