@@ -1,9 +1,11 @@
-header .line {
-  border-top: 1px solid #dcdcdc;
+header {
+  position: relative;
 }
 
-.showing {
-  display: block;
+/* 라인 정리 */
+
+header .line {
+  border-top: 1px solid #dcdcdc;
 }
 
 header .line-ver {
@@ -15,13 +17,15 @@ header .line-ver {
 header .line-blue {
   display: none;
   width: 70%;
-  height: 2px;
+  height: 3px;
   margin: 0 auto;
   background-color: #0099ff;
   position: absolute;
   top: -30px;
   left: 28px;
 }
+
+/* 글로벌 네비게이션 */
 
 .global-nav {
   width: 1200px;
@@ -64,6 +68,8 @@ header .line-blue {
 .global-nav__column a:hover {
   color: #1b79b1;
 }
+
+/* 메인 네비게이션 */
 
 .main-nav {
   width: 1200px;
