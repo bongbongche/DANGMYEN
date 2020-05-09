@@ -162,7 +162,7 @@ header .line-blue {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 7px 10px;
+  padding: 9px 12px;
   background-color: white;
   transition: 0.2s ease-in-out;
 }
@@ -172,12 +172,12 @@ header .line-blue {
 }
 
 .main-nav__button i {
-  font-size: 22px;
+  font-size: 19px;
 }
 
 .main-nav__button span {
   margin-left: 5px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .main-nav__button a:hover {
