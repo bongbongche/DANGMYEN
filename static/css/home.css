@@ -1,0 +1,68 @@
+/* Slide */
+
+.slide {
+  position: relative;
+  height: 720px;
+  overflow: hidden;
+}
+.slide__screen {
+  height: 100%;
+  display: flex;
+}
+.screen__content {
+  height: 100%;
+}
+.content01 {
+  background: #faa;
+}
+.content02 {
+  background: #afa;
+}
+.content03 {
+  background: #aaf;
+}
+.content04 {
+  background: #faf;
+}
+
+/* Button */
+
+.button-prev,
+.button-next {
+  cursor: pointer;
+  position: absolute;
+  font-size: 60px;
+  top: 45%;
+  color: white;
+}
+
+.button-prev {
+  left: 1%;
+}
+
+.button-next {
+  right: 1%;
+}
+
+/* Dot */
+
+.dots {
+  left: 47%;
+  bottom: 12%;
+  position: absolute;
+  display: flex;
+}
+
+.dot {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.dot-active {
+  width: 30px;
+  border-radius: 5px;
+}

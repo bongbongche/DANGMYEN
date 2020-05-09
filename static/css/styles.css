@@ -2,6 +2,7 @@
 @import "reset.css";
 @import "header.css";
 @import "footer.css";
+@import "home.css";
 
 body,
 html {
@@ -21,10 +22,4 @@ a {
 a:hover,
 a:active {
   text-decoration: none;
-}
-
-.box {
-  width: 100%;
-  height: 3000px;
-  background-color: coral;
 }
