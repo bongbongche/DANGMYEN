@@ -1,9 +1,12 @@
 /* Slide */
 
 .slide {
+  font-family: "Jua";
+  font-size: 50px;
   position: relative;
   height: 720px;
   overflow: hidden;
+  color: white;
 }
 .slide__screen {
   height: 100%;
@@ -13,16 +16,16 @@
   height: 100%;
 }
 .content01 {
-  background: #faa;
+  background-image: url(/static/images/20181001.png);
 }
 .content02 {
-  background: #afa;
+  background-image: url(/static/images/20181001_1.png);
 }
 .content03 {
-  background: #aaf;
+  background-image: url(/static/images/20181001_2.png);
 }
 .content04 {
-  background: #faf;
+  background-image: url(/static/images/20181001_3.png);
 }
 
 /* Button */

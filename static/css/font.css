@@ -1,0 +1,16 @@
+@font-face {
+  font-family: jua;
+  src: url("/static/font/BMJUA.woff");
+}
+@font-face {
+  font-family: nanum;
+  src: url("/static/font/NanumBarunGothic.woff");
+}
+@font-face {
+  font-family: noto;
+  src: url("/static/font/NotoSansB.woff");
+}
+@font-face {
+  font-family: nanum-squre;
+  src: url("/static/font/NotoSansB.woff");
+}

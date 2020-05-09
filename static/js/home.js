@@ -1,21 +1,21 @@
 //Slide DOM
-
-const screen = document.querySelector(".slide__screen");
-const screenItems = screen.querySelectorAll(".screen__content");
-const screenLen = screen.children.length;
+const slide = document.querySelector(".slide"),
+  screen = document.querySelector(".slide__screen"),
+  screenItems = screen.querySelectorAll(".screen__content"),
+  screenLen = screen.children.length;
 
 //Buttons DOM
 
-const nextBtn = document.querySelector(".button-next");
-const prevBtn = document.querySelector(".button-prev");
+const nextBtn = document.querySelector(".button-next"),
+  prevBtn = document.querySelector(".button-prev");
 
 //Dots DOM
 
-const dots = document.querySelector(".dots");
-const dot = dots.querySelectorAll(".dot");
+const dots = document.querySelector(".dots"),
+  dot = dots.querySelectorAll(".dot");
 
-const SLIDE_SPEED = 500;
-const itemWidth = 100 / (screenLen + 2);
+const SLIDE_SPEED = 500,
+  itemWidth = 100 / (screenLen + 2);
 
 //Screen css settings
 
@@ -27,10 +27,10 @@ screen.style.transform = `translateX(-${itemWidth}%)`;
 
 //Copy first, last child and Paste back and forth
 
-const firstItem = screen.firstElementChild;
-const lastItem = screen.lastElementChild;
-const clonedFirst = firstItem.cloneNode(true);
-const clonedLast = lastItem.cloneNode(true);
+const firstItem = screen.firstElementChild,
+  lastItem = screen.lastElementChild,
+  clonedFirst = firstItem.cloneNode(true),
+  clonedLast = lastItem.cloneNode(true);
 
 screen.appendChild(clonedFirst);
 screen.prepend(clonedLast);
@@ -38,6 +38,7 @@ screen.prepend(clonedLast);
 //Set default index and slider status
 
 let currentIndex = 0;
+
 let sliding = false;
 
 //Handle next button
@@ -63,7 +64,6 @@ function handleNextBtn() {
       currentIndex = 0;
       dot[currentIndex].classList.add("dot-active");
     }
-    console.log(currentIndex);
     preventClicks();
   }
 }
@@ -88,7 +88,6 @@ function handlePrevBtn() {
       currentIndex = 3;
       dot[currentIndex].classList.add("dot-active");
     }
-    console.log(currentIndex);
     preventClicks();
   }
 }
@@ -112,15 +111,33 @@ function handleDot(e) {
   dot[currentIndex].classList.add("dot-active");
 }
 
+//Set auto slide
+
+let mouseOn = false;
+
+slide.addEventListener("mouseleave", () => {
+  mouseOn = false;
+});
+slide.addEventListener("mouseenter", () => {
+  mouseOn = true;
+});
+
+function autoSlide() {
+  if (mouseOn === false) handleNextBtn();
+}
+
 function init() {
   //Button click
   nextBtn.addEventListener("click", handleNextBtn);
   prevBtn.addEventListener("click", handlePrevBtn);
 
-  //Dot Click
+  //Dot click
   dot.forEach((dot) => {
     dot.addEventListener("click", handleDot);
   });
+
+  //Auto slide
+  setInterval(autoSlide, 3000);
 }
 
 init();

@@ -23,7 +23,8 @@ footer {
 .site-map {
   width: 100%;
   color: white;
-  font-size: 14px;
+  font-size: 14.5px;
+  letter-spacing: 0px;
   padding: 45px 0 38px;
   background-color: #c2b98b;
 }
