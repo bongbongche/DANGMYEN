@@ -99,4 +99,32 @@ block content
                         .overlay
                         p 당면 떡볶이
                         a(href="#") more
-
+        section#board
+            .board__item
+                .item__column
+                    p 공지사항
+                    p
+                        | 푸름찬의 다양한 소식을
+                        br
+                        | 만나보세요.
+                .item__column
+                    a(href=`/board${routes.notice}`)
+                        i.fas.fa-plus
+                    .item__content
+                        span 2018.09.19
+                        a(href="#") 홈페이지 리뉴얼
+            .board__item
+                .item__column
+                    p 언론보도
+                    p
+                        | 푸름찬의 생생한 뉴스를
+                        br
+                        | 만나 보세요.
+                .item__column
+                    a(href=`/board${routes.news}`)
+                        i.fas.fa-plus
+                    .item__content
+                        span 2019.07.11
+                        a(href="#") 123
+        section#video
+            img(src="/static/images/video.png")

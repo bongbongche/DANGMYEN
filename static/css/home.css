@@ -270,3 +270,73 @@ li:last-child .cooking__item {
   top: 3%;
   opacity: 1;
 }
+
+/* Section board */
+
+#board {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board__item {
+  width: 47%;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 70px;
+  letter-spacing: 0;
+}
+
+/* Board columns */
+
+.board__item .item__column:last-child {
+  text-align: right;
+}
+
+/* Board p */
+
+.item__column p:first-child {
+  font-size: 29px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #0099ff;
+  display: inline-block;
+}
+
+.item__column p:last-child {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Board a */
+
+.item__column a:first-child {
+  border: 1px solid #717171;
+  padding: 5px 7px;
+  display: inline-block;
+  color: #717171;
+  margin-bottom: 28px;
+}
+
+/* Board item content */
+
+.item__content span {
+  color: #0099ff;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+/* Board notice */
+
+.board__item:first-child {
+  border-right: 1px solid #dcdcdc;
+  padding-right: 35px;
+}
+
+/* Video */
+
+#video img {
+  width: 100%;
+}
