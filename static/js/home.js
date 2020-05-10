@@ -1,5 +1,5 @@
 //Slide DOM
-const slide = document.querySelector(".slide"),
+const slide = document.querySelector("#slide"),
   screen = document.querySelector(".slide__screen"),
   screenItems = screen.querySelectorAll(".screen__content"),
   screenLen = screen.children.length;

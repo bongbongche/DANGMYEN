@@ -1,6 +1,6 @@
-/* Slide */
+/* Section slide */
 
-.slide {
+#slide {
   position: relative;
   height: 720px;
   overflow: hidden;
@@ -26,7 +26,6 @@
 }
 
 /* Slide text */
-
 .content__text {
   padding: 240px;
   font-family: "Jua";
@@ -91,4 +90,183 @@
 .dot-active {
   width: 30px;
   border-radius: 5px;
+}
+
+/* Section product */
+
+#product {
+  background-image: url(/static/images/product_bg.png);
+  background-size: cover;
+  padding: 50px 0 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0px;
+}
+
+/* Product title */
+
+.section__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__title p {
+  font-family: noto;
+  font-size: 67px;
+}
+
+.section__title p:nth-child(2) {
+  font-family: nanum;
+  font-size: 18px;
+  margin: 22px 0 55px 0;
+}
+
+/* Product list */
+
+.product__list {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__list li {
+  width: 49%;
+}
+
+.list__item {
+  padding: 65px 45px;
+  color: #fff;
+}
+
+li:first-child .list__item {
+  background-image: url(/static/images/product_img01.png);
+  background-size: cover;
+}
+
+li:last-child .list__item {
+  background-image: url(/static/images/product_img02.png);
+  background-size: cover;
+}
+
+.list__item p {
+  font-size: 37px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px #00000091;
+}
+
+.list__item p:nth-child(2) {
+  font-family: nanum-light;
+  font-size: 16px;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.list__item a {
+  font-family: noto;
+  display: inline-block;
+  padding: 16px 60px;
+  color: black;
+  background-color: white;
+  text-shadow: none;
+  border: 1px solid #aaa49f;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.list__item a:hover {
+  background-color: #cfc17c;
+  border-color: #cfc17c;
+  color: white;
+}
+
+/* Section cooking */
+#cooking {
+  background-image: url(/static/images/delightful_bg.png);
+  background-size: cover;
+  padding: 50px 0 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0px;
+}
+
+/* Cooking list */
+
+.cooking__list {
+  color: white;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cooking__item {
+  width: 295px;
+  height: 295px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+li:first-child .cooking__item {
+  background-image: url(/static/images/20181002.png);
+}
+
+li:nth-child(2) .cooking__item {
+  background-image: url(/static/images/20181002_1.png);
+}
+
+li:nth-child(3) .cooking__item {
+  background-image: url(/static/images/20181002_2.png);
+}
+
+li:last-child .cooking__item {
+  background-image: url(/static/images/20181002_3.png);
+}
+
+.cooking__item .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(194, 185, 139, 0.9);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cooking__item p {
+  font-size: 33px;
+  font-weight: bold;
+  position: relative;
+  top: 3%;
+  transition: 0.2s;
+}
+
+.cooking__item a {
+  font-size: 17px;
+  font-weight: bold;
+  border-bottom: 1.5px solid white;
+  position: relative;
+  top: 8%;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+/* Cooking item hover */
+
+.cooking__item:hover .overlay {
+  opacity: 1;
+}
+
+.cooking__item:hover p {
+  top: -2%;
+}
+
+.cooking__item:hover a {
+  top: 3%;
+  opacity: 1;
 }
