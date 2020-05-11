@@ -30,8 +30,8 @@ header
                     img(src="http://dangmyen.co.kr/images/main/logo.png")
         .main-nav__column
             .main-nav__menu
-                .menu__item
-                    a.item__name(href=`/company${routes.ceo}`, data-index="1") 회사소개
+                .menu__item(data-index="1")
+                    a.item__name(href=`/company${routes.ceo}`) 회사소개
                     ul.menu__sub
                         p.line-blue(data-index="1")
                         li
@@ -43,8 +43,8 @@ header
                         li
                             a(href=`/company${routes.local}`) 오시는 길
                     p.line-ver
-                .menu__item
-                    a.item__name(href=`/intro${routes.brand}`, data-index="2") 푸름찬
+                .menu__item(data-index="2")
+                    a.item__name(href=`/intro${routes.brand}`) 푸름찬
                     ul.menu__sub
                         p.line-blue(data-index="2")
                         li
@@ -52,8 +52,8 @@ header
                         li
                             a(href=`/intro${routes.prd_process}`) 제조공정
                     p.line-ver
-                .menu__item
-                    a.item__name(href=`/product${routes.prd_01}`, data-index="3") 제품소개
+                .menu__item(data-index="3")
+                    a.item__name(href=`/product${routes.prd_01}`) 제품소개
                     ul.menu__sub
                         p.line-blue(data-index="3")
                         li
@@ -61,8 +61,8 @@ header
                         li
                             a(href=`/product${routes.prd_02}`) 자매품
                     p.line-ver
-                .menu__item
-                    a.item__name(href=`/board${routes.notice}`, data-index="4") 고객센터
+                .menu__item(data-index="4")
+                    a.item__name(href=`/board${routes.notice}`) 고객센터
                     ul.menu__sub
                         p.line-blue(data-index="4")
                         li
@@ -73,12 +73,59 @@ header
                             a(href=`/board${routes.news}`) 보도자료
         .main-nav__column
             .main-nav__button
-                    a(href="#")
+                    a(href="/static/wg_catalogue.pdf", target="_")
                         i.fas.fa-book
                         span 카달로그
                     a(href="#")
                         i.fas.fa-bars
     p.line
     .menu__sub_bg
-// 카탈로그 pdf 다운로드
-// 모달창 만들기
+.modal-bg
+.modal-nav
+        .modal-nav__wrapper
+            i.fas.fa-times.modal-nav__close
+            ul
+                li
+                    a(href=`/company${routes.ceo}`) 회사소개
+                li
+                    a(href=`/company${routes.ceo}`) CEO 인사말
+                        i.fas.fa-angle-right
+                li
+                    a(href=`/company${routes.history}`) 회사연혁
+                        i.fas.fa-angle-right
+                li
+                    a(href=`/company${routes.certification}`) 표창/인증/특허
+                        i.fas.fa-angle-right
+                li
+                    a(href=`/company${routes.local}`) 오시는 길
+                        i.fas.fa-angle-right
+            ul
+                li
+                    a(href=`/intro${routes.brand}`) 푸름찬
+                li
+                    a(href=`/intro${routes.brand}`) 브랜드 소개
+                        i.fas.fa-angle-right
+                li
+                    a(href=`/intro${routes.prd_process}`) 제조공정
+                        i.fas.fa-angle-right
+            ul
+                li
+                    a(href=`/product${routes.prd_01}`) 제품소개
+                li
+                    a(href=`/product${routes.prd_01}`) 푸름찬 당면
+                        i.fas.fa-angle-right
+                li
+                    a(href=`/product${routes.prd_02}`) 자매품
+                        i.fas.fa-angle-right
+            ul
+                li
+                    a(href=`/board${routes.notice}`) 고객센터
+                li
+                    a(href=`/board${routes.notice}`) 공지사항
+                        i.fas.fa-angle-right
+                li
+                    a(href=`/board${routes.ask}`) 고객문의
+                        i.fas.fa-angle-right
+                li
+                    a(href=`/board${routes.news}`) 보도자료
+                        i.fas.fa-angle-right

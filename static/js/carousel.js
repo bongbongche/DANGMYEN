@@ -137,7 +137,7 @@ function init() {
   });
 
   //Auto slide
-  // setInterval(autoSlide, 3000);
+  setInterval(autoSlide, 3000);
 }
 
 init();

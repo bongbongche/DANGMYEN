@@ -11,7 +11,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin: -40px 0;
-  z-index: 99;
+  z-index: 1;
 }
 
 .move-top img {
