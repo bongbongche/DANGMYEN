@@ -340,3 +340,32 @@ li:last-child .cooking__item {
 #video img {
   width: 100%;
 }
+
+/* Modal video */
+
+.modal-video {
+  position: fixed;
+  top: 110px;
+  left: 50%;
+  width: 845px;
+  margin-left: -420px;
+  z-index: 99;
+  display: none;
+}
+
+.modal-video i {
+  position: absolute;
+  top: 0;
+  right: -39px;
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  font-size: 28px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+iframe {
+  width: 845px;
+  height: 500px;
+}

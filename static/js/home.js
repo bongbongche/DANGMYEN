@@ -126,7 +126,7 @@ function autoSlide() {
   if (mouseOn === false) handleNextBtn();
 }
 
-function init() {
+function initCarousel() {
   //Button click
   nextBtn.addEventListener("click", handleNextBtn);
   prevBtn.addEventListener("click", handlePrevBtn);
@@ -140,4 +140,43 @@ function init() {
   setInterval(autoSlide, 3000);
 }
 
-init();
+initCarousel();
+
+/////////////// Modal Video ///////////////
+
+//Video image DOM
+
+const videoSection = document.querySelector("#video img");
+
+//Modal video DOM, modalVidBg = modalBg(header.js)
+
+const modalVidBg = document.querySelector(".modal-bg"),
+  modalVid = document.querySelector(".modal-video"),
+  modalIframe = modalVid.querySelector("iframe"),
+  modalVidClose = modalVid.querySelector("i");
+
+//Video Click
+
+function handleVidClick() {
+  modalVid.style.display = "block";
+  modalVidBg.style.display = "block";
+}
+
+//video Close
+function handleVidClose() {
+  modalIframe.src = "";
+  modalVid.style.display = "none";
+  modalVidBg.style.display = "none";
+  modalIframe.src = "https://www.youtube.com/embed/pkz7FmYLgF8";
+}
+
+function initModalVid() {
+  //when video click
+  videoSection.addEventListener("click", handleVidClick);
+
+  //when video close
+  modalVidClose.addEventListener("click", handleVidClose);
+  modalVidBg.addEventListener("click", handleVidClose);
+}
+
+initModalVid();
