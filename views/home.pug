@@ -1,133 +1,132 @@
 extends layouts/main
 
-block content
-    article
-        section#slide
-            .slide__screen
-                .screen__content.content01
-                    .content__text
-                        p
-                            | 30년 동안 당면만을 위한
-                            br
-                            | 외길을 걸어온 우정식품
-                        p
-                            | 우정식품은 약 30년 동안 당면제품만을 전문적으로 생산하는
-                            br
-                            | 기업으로서 최고의 당면을 만들기 위해 최선의 노력을 다하고 있습니다.
-                .screen__content.content02
-                    .content__text
-                        p
-                            | 세상이 전하는 푸른맛
-                            br
-                            | 푸름찬이 함께 합니다.
-                        p
-                            | 푸름찬은 보다 신선하고 건강한 식품을 통하여
-                            br
-                            | 고객 한분한분께 만족과 행복을 드리고자 합니다
-                .screen__content.content03
-                    .content__text
-                        p
-                            | 30년 동안 당면만을 위한
-                            br
-                            | 외길을 걸어온 우정식품
-                        p
-                            | 우정식품은 약 30년 동안 당면제품만을 전문적으로 생산하는
-                            br
-                            | 기업으로서 최고의 당면을 만들기 위해 최선의 노력을 다하고 있습니다.
-                .screen__content.content04
-                    .content__text
-                        p
-                            | 30년 동안 당면만을 위한
-                            br
-                            | 외길을 걸어온 우정식품
-                        p
-                            | 우정식품은 약 30년 동안 당면제품만을 전문적으로 생산하는
-                            br
-                            | 기업으로서 최고의 당면을 만들기 위해 최선의 노력을 다하고 있습니다.
-            .button-prev
-                i.fas.fa-chevron-left
-            .button-next
-                i.fas.fa-chevron-right
-            .dots
-                .dot.dot-active(data-index="0")
-                .dot(data-index="1")
-                .dot(data-index="2")
-                .dot(data-index="3")
-        section#product
-            .section__title
-                p PRODUCT
-                p 푸름찬의 다양한 제품을 확인해 보세요.
-            ul.product__list
-                li
-                    .list__item
-                        p 당면
-                        p
-                            | 푸름찬의 쫄깃쫄깃한 당면에
-                            br
-                            | 담긴 이야기를 클릭해 보세요.
-                        a(href=`/product${routes.prd_01}`) more
-                li
-                    .list__item
-                        p 자매품
-                        p
-                            | 푸름찬은 한식 고유의 전통에 현대인이 추구하는
-                            br
-                            | 가치를 더해 새로운 라이프 스타일을 추구합니다.
-                        a(href=`/product${routes.prd_02}`) more
-        section#cooking
-            .section__title
-                p COOKING
-                p 당면을 이용해서 다양한 요리에 도전해 보세요.
-            ul.cooking__list
-                li
-                    .cooking__item
-                        .overlay
-                        p 잡채
-                        a(href="#") more
-                li
-                    .cooking__item
-                        .overlay
-                        p 비빔당면
-                        a(href="#") more
-                li
-                    .cooking__item
-                        .overlay
-                        p 불고기 당면볶음
-                        a(href="#") more
-                li
-                    .cooking__item
-                        .overlay
-                        p 당면 떡볶이
-                        a(href="#") more
-        section#board
-            .board__item
-                .item__column
-                    p 공지사항
+block home
+    section#slide
+        .slide__screen
+            .screen__content.content01
+                .content__text
                     p
-                        | 푸름찬의 다양한 소식을
+                        | 30년 동안 당면만을 위한
                         br
-                        | 만나보세요.
-                .item__column
-                    a(href=`/board${routes.notice}`)
-                        i.fas.fa-plus
-                    .item__content
-                        span 2018.09.19
-                        a(href="#") 홈페이지 리뉴얼
-            .board__item
-                .item__column
-                    p 언론보도
+                        | 외길을 걸어온 우정식품
                     p
-                        | 푸름찬의 생생한 뉴스를
+                        | 우정식품은 약 30년 동안 당면제품만을 전문적으로 생산하는
                         br
-                        | 만나 보세요.
-                .item__column
-                    a(href=`/board${routes.news}`)
-                        i.fas.fa-plus
-                    .item__content
-                        span 2019.07.11
-                        a(href="#") 123
-        section#video
-            img(src="/static/images/video.png")
+                        | 기업으로서 최고의 당면을 만들기 위해 최선의 노력을 다하고 있습니다.
+            .screen__content.content02
+                .content__text
+                    p
+                        | 세상이 전하는 푸른맛
+                        br
+                        | 푸름찬이 함께 합니다.
+                    p
+                        | 푸름찬은 보다 신선하고 건강한 식품을 통하여
+                        br
+                        | 고객 한분한분께 만족과 행복을 드리고자 합니다
+            .screen__content.content03
+                .content__text
+                    p
+                        | 30년 동안 당면만을 위한
+                        br
+                        | 외길을 걸어온 우정식품
+                    p
+                        | 우정식품은 약 30년 동안 당면제품만을 전문적으로 생산하는
+                        br
+                        | 기업으로서 최고의 당면을 만들기 위해 최선의 노력을 다하고 있습니다.
+            .screen__content.content04
+                .content__text
+                    p
+                        | 30년 동안 당면만을 위한
+                        br
+                        | 외길을 걸어온 우정식품
+                    p
+                        | 우정식품은 약 30년 동안 당면제품만을 전문적으로 생산하는
+                        br
+                        | 기업으로서 최고의 당면을 만들기 위해 최선의 노력을 다하고 있습니다.
+        .button-prev
+            i.fas.fa-chevron-left
+        .button-next
+            i.fas.fa-chevron-right
+        .dots
+            .dot.dot-active(data-index="0")
+            .dot(data-index="1")
+            .dot(data-index="2")
+            .dot(data-index="3")
+    section#product
+        .section__title
+            p PRODUCT
+            p 푸름찬의 다양한 제품을 확인해 보세요.
+        ul.product__list
+            li
+                .list__item
+                    p 당면
+                    p
+                        | 푸름찬의 쫄깃쫄깃한 당면에
+                        br
+                        | 담긴 이야기를 클릭해 보세요.
+                    a(href=`/product${routes.prd_01}`) more
+            li
+                .list__item
+                    p 자매품
+                    p
+                        | 푸름찬은 한식 고유의 전통에 현대인이 추구하는
+                        br
+                        | 가치를 더해 새로운 라이프 스타일을 추구합니다.
+                    a(href=`/product${routes.prd_02}`) more
+    section#cooking
+        .section__title
+            p COOKING
+            p 당면을 이용해서 다양한 요리에 도전해 보세요.
+        ul.cooking__list
+            li
+                .cooking__item
+                    .overlay
+                    p 잡채
+                    a(href="#") more
+            li
+                .cooking__item
+                    .overlay
+                    p 비빔당면
+                    a(href="#") more
+            li
+                .cooking__item
+                    .overlay
+                    p 불고기 당면볶음
+                    a(href="#") more
+            li
+                .cooking__item
+                    .overlay
+                    p 당면 떡볶이
+                    a(href="#") more
+    section#board
+        .board__item
+            .item__column
+                p 공지사항
+                p
+                    | 푸름찬의 다양한 소식을
+                    br
+                    | 만나보세요.
+            .item__column
+                a(href=`/board${routes.notice}`)
+                    i.fas.fa-plus
+                .item__content
+                    span 2018.09.19
+                    a(href="#") 홈페이지 리뉴얼
+        .board__item
+            .item__column
+                p 언론보도
+                p
+                    | 푸름찬의 생생한 뉴스를
+                    br
+                    | 만나 보세요.
+            .item__column
+                a(href=`/board${routes.news}`)
+                    i.fas.fa-plus
+                .item__content
+                    span 2019.07.11
+                    a(href="#") 123
+    section#video
+        img(src="/static/images/video.png")
     .modal-video
         iframe(src="https://www.youtube.com/embed/pkz7FmYLgF8", frameborder="0", allowfullscreen)
         i.fas.fa-times

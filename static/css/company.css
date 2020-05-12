@@ -1,0 +1,57 @@
+.sub__title {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0px;
+  text-shadow: 2px 2px 2px #00000030;
+  font-family: nanum-square;
+}
+
+.sub__title h1 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 140px 0 10px;
+}
+
+.sub__title p {
+  font-size: 17px;
+  margin-bottom: 141px;
+}
+
+.sub__title ul {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  text-shadow: none;
+}
+
+.sub__title li {
+  width: 25%;
+  background-color: white;
+  color: #171717;
+  text-align: center;
+  border-right: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.sub__title a {
+  width: 100%;
+  display: inline-block;
+  padding: 20px 0;
+  font-size: 17.6px;
+}
+
+.company__title {
+  background-image: url(/static/images/sub/sub_tit_bg_com.png);
+}
+
+.company__title h1::after {
+  content: "회사소개";
+}
+
+.company__title p::after {
+  content: "우정식품을 소개합니다.";
+}
