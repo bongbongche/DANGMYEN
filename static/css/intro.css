@@ -1,0 +1,15 @@
+.intro__title {
+  background-image: url(/static/images/sub/sub_tit_bg_purumchan.png);
+}
+
+.intro__title h1::after {
+  content: "푸름찬";
+}
+
+.intro__title p::after {
+  content: "Green Food Factory";
+}
+
+.intro__title li {
+  width: 50%;
+}

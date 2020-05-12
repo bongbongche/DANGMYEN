@@ -1,0 +1,15 @@
+.board__title {
+  background-image: url(/static/images/sub/sub_tit_bg_customer.png);
+}
+
+.board__title h1::after {
+  content: "고객센터";
+}
+
+.board__title p::after {
+  content: "우정식품을 소개합니다.";
+}
+
+.board__title li {
+  width: 33.3%;
+}

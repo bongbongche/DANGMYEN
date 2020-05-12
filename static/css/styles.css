@@ -4,7 +4,11 @@
 @import "footer.css";
 @import "home.css";
 @import "company.css";
+@import "intro.css";
+@import "product.css";
+@import "board.css";
 @import "ceo.css";
+@import "history.css";
 
 body,
 html {

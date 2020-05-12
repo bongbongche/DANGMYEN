@@ -1,4 +1,14 @@
-extends layouts/main
+extends layouts/sub
 
-block content
-    p Ask
+block sub
+    .board__title.sub__title
+        h1
+        p
+        ul
+            li
+                a(href=`/board${routes.notice}`) 공지사항
+            li.on
+                a(href=`/board${routes.ask}`) 고객문의
+            li
+                a(href=`/board${routes.news}`) 보도자료
+    section.board__ask

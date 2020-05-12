@@ -1,4 +1,12 @@
-extends layouts/main
+extends layouts/sub
 
-block content
-    p Product 01
+block sub
+    .product__title.sub__title
+        h1
+        p
+        ul
+           li.on
+               a(href=`/product${routes.prd_01}`) 푸름찬 당면
+           li
+               a(href=`/product${routes.prd_02}`) 자매품
+    section.product__prd_01

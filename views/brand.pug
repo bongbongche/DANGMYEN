@@ -1,4 +1,12 @@
-extends layouts/main
+extends layouts/sub
 
-block content
-    p Brand
+block sub
+    .intro__title.sub__title
+        h1
+        p
+        ul
+            li.on
+                a(href=`/intro${routes.brand}`) 브랜드 소개
+            li
+                a(href=`/intro${routes.prd_process}`) 제조공정
+    section.intro__brand

@@ -1,4 +1,16 @@
-extends layouts/company
+extends layouts/sub
 
-block company
+block sub
+    .company__title.sub__title
+        h1
+        p
+        ul
+            li
+                a(href=`/company${routes.ceo}`) CEO 인사말
+            li
+                a(href=`/company${routes.history}`) 회사연혁
+            li.on
+                a(href=`/company${routes.certification}`) 표창/인증/특허
+            li
+                a(href=`/company${routes.local}`) 오시는 길
     section.company__certification

@@ -1,0 +1,15 @@
+.product__title {
+  background-image: url(/static/images/sub/sub_tit_bg_prd.png);
+}
+
+.product__title h1::after {
+  content: "제품소개";
+}
+
+.product__title p::after {
+  content: "Product Line-up";
+}
+
+.product__title li {
+  width: 50%;
+}
