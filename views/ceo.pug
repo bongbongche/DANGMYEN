@@ -1,7 +1,7 @@
 extends layouts/sub
 
 block sub
-    .company__title.sub__title
+    .company__title.sub__header
         h1
         p
         ul
@@ -13,4 +13,18 @@ block sub
                 a(href=`/company${routes.certification}`) 표창/인증/특허
             li
                 a(href=`/company${routes.local}`) 오시는 길
-    section.company__ceo
+    section.sub__section
+        .sub__title
+            h1 CEO 인사말
+        .ceo__greeting
+            .greeting__column
+            .greeting__column
+        .ceo__vision
+            .vision__title
+            ul
+                li
+                    img(src="")
+                li
+                    img(src="")
+                li
+                    img(src="")

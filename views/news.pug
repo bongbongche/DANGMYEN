@@ -1,7 +1,7 @@
 extends layouts/sub
 
 block sub
-    .board__title.sub__title
+    .board__title.sub__header
         h1
         p
         ul
@@ -11,4 +11,4 @@ block sub
                 a(href=`/board${routes.ask}`) 고객문의
             li.on
                 a(href=`/board${routes.news}`) 보도자료
-    section.board__news
+    section.sub__section

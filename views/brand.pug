@@ -1,7 +1,7 @@
 extends layouts/sub
 
 block sub
-    .intro__title.sub__title
+    .intro__title.sub__header
         h1
         p
         ul
@@ -9,4 +9,4 @@ block sub
                 a(href=`/intro${routes.brand}`) 브랜드 소개
             li
                 a(href=`/intro${routes.prd_process}`) 제조공정
-    section.intro__brand
+    section.sub__section
