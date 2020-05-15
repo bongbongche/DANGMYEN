@@ -1,0 +1,56 @@
+/* Map */
+
+.local__map iframe {
+  width: 1200px;
+  height: 640px;
+}
+
+/* Adrress */
+
+.local__address {
+  margin-top: 40px;
+  font-family: nanum-square;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  width: 100%;
+}
+
+.address__title {
+  font-size: 17.6px;
+  margin-bottom: 15px;
+}
+
+/* Adress detail */
+
+.address__detail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.addr__detail-column {
+  display: flex;
+  align-items: center;
+}
+
+/* Detail icon */
+
+.addr__detail-column i {
+  margin-right: 5px;
+}
+
+.addr__detail-column:last-child i {
+  font-size: 12px;
+}
+
+/* Adress info */
+
+.address__info span:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 2px solid #dcdcdc;
+}

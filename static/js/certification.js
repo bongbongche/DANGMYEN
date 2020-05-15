@@ -27,7 +27,7 @@ const certiDelay = (i) => {
   }, TRANSITION_SPEED);
 };
 
-const closeCerti = () => {
+const closeCerti = async () => {
   for (i = 0; i < certiFullImg.length; i++) {
     if (certiFullImg[i].classList.contains("clicked")) {
       certiFullImg[i].classList.remove("clicked");
