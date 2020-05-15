@@ -1,0 +1,74 @@
+/* Process background */
+
+.process__bg {
+  background: url(/static/images/sub/main_txt_bg_prd_process.png);
+  background-size: cover;
+  color: white;
+  font-family: nanum-light;
+  font-size: 33.6px;
+  text-align: center;
+  padding: 75px 0 52px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.process__bg p:first-child span {
+  font-weight: bold;
+}
+
+.process__bg p:nth-child(2) {
+  width: 150px;
+  height: 3.5px;
+  background-color: white;
+  margin: 30px 0;
+}
+
+.process__bg p:nth-child(3) {
+  width: 66%;
+  font-size: 19.2px;
+}
+
+/* Process list */
+
+.process__list li {
+  display: flex;
+  font-family: nanum-square;
+  font-size: 17.6px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+
+.process__list li:not(:last-child) {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px dashed #c2b98b;
+}
+
+.process__manufacture {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.process__manufacture .manufacture__column:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.process__manufacture .manufacture__column:first-child p {
+  margin-top: 15px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 19.2px;
+}
+
+.process__manufacture .manufacture__column:last-child {
+  width: 41%;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}

@@ -17,6 +17,8 @@ footer {
 .move-top img {
   opacity: 0;
   transition: 1s;
+  border-radius: 50%;
+  border: 1px solid #d1d1d1;
 }
 
 /* SITE MAP */
