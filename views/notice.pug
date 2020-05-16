@@ -12,3 +12,27 @@ block sub
             li
                 a(href=`/board${routes.news}`) 보도자료
     section.sub__section
+        .sub__title
+            h1 공지사항
+        .board
+            .board__table
+                .table__head 번호
+                .table__head 제목
+                .table__head 작성자
+                .table__head 날짜
+                .table__head 조회수
+                .table__item
+                    i.fas.fa-bullhorn
+                .table__item
+                    a(href="#")
+                        | 홈페이지 리뉴얼
+                .table__item 관리자
+                .table__item 2018.09.19
+                .table__item 10,520
+            .board__search
+                form
+                    select
+                        option 제목
+                        option 내용
+                    input(type="text")
+                    button 검색
