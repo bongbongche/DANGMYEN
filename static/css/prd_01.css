@@ -1,0 +1,88 @@
+/* .Prd-showing */
+
+.prd-showing {
+  width: 88%;
+  margin: 130px auto 0 auto;
+  display: flex;
+  letter-spacing: 0px;
+}
+
+/* .Prd-showing img */
+
+.prd-showing .showing__img {
+  width: 38%;
+}
+
+/* .Prd-showing  wrapper */
+
+.prd-showing .showing__wrapper {
+  display: flex;
+}
+
+/* .Prd-showing number */
+
+.showing__wrapper .showing__number {
+  font-family: nanum-square;
+  font-size: 35.2px;
+  font-weight: bold;
+  background-color: #006ec7;
+  color: white;
+  padding: 5px 15px 5px 20px;
+  border-radius: 100px 0 0 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .Prd-showing explain */
+
+.showing__wrapper .showing__explain {
+  border-left: 1px solid #006ec7;
+  padding: 10px 0 10px 45px;
+  height: 75%;
+}
+
+.showing__explain p:first-child {
+  font-size: 32px;
+  font-family: nanum-light;
+}
+
+.showing__explain p:first-child span {
+  font-size: 33.6px;
+  font-family: nanum-square;
+  font-weight: bold;
+  color: #006ec7;
+  margin: 8px 0 20px 0;
+  display: block;
+}
+
+.showing__explain p:nth-child(2) {
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* .Prd-showing icon */
+
+.showing__explain .showing__icons {
+  display: flex;
+}
+
+.showing__icon {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+.showing__icon h3 {
+  font-size: 12.8px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.showing__icon h3 span {
+  font-size: 14px;
+  color: #006ec7;
+  padding-top: 5px;
+  display: block;
+}
