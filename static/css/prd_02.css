@@ -1,0 +1,30 @@
+.showing__wrapper .showing__explain-02 {
+  padding: 10px 0 10px 45px;
+  height: 75%;
+}
+
+.showing__explain-02 p:first-child {
+  font-size: 32px;
+  font-family: nanum-light;
+  line-height: 1.2;
+}
+
+.showing__explain-02 p:first-child span {
+  font-size: 33.6px;
+  font-family: nanum-square;
+  font-weight: bold;
+  color: #006ec7;
+  margin: 8px 0 20px 0;
+  display: block;
+}
+
+.showing__explain-02 p:nth-child(2) {
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.showing__explain-02 .showing__icons {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 20px 0;
+}

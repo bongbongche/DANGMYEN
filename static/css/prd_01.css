@@ -65,13 +65,14 @@
 /* .Prd-showing icon */
 
 .showing__explain .showing__icons {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 20px 0;
 }
 
 .showing__icon {
   display: flex;
   align-items: center;
-  width: 150px;
 }
 
 .showing__icon h3 {
