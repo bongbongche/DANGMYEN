@@ -61,7 +61,5 @@
 .board__search button {
   color: white;
   background-color: #545861;
-  border: none;
-  outline: none;
   padding: 3.5px 15px;
 }

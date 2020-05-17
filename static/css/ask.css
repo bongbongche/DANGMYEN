@@ -1,0 +1,152 @@
+/* Ask */
+
+.ask {
+  letter-spacing: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ask title */
+
+.ask__title {
+  margin-bottom: 15px;
+}
+
+.ask__title span:first-child {
+  font-size: 29px;
+  color: #323338;
+}
+
+.ask__title span:nth-child(2) {
+  font-size: 17px;
+  color: #525252;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* Ask agree */
+
+.ask__agree {
+  height: 250px;
+  overflow: auto;
+  padding: 20px;
+  border: 1px solid #acacac;
+  box-sizing: border-box;
+}
+
+.agree__content h5 {
+  font-size: 19px;
+  color: #323338;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.agree__content ol {
+  font-size: 14.4px;
+  margin-left: 15px;
+  color: #525252;
+}
+
+.agree__content ol li {
+  margin-bottom: 14px;
+}
+
+/* Ask form */
+
+.ask__form {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  margin: 40px 0;
+  border-top: 1px solid #acacac;
+  border-right: 1px solid #acacac;
+  border-left: 1px solid #acacac;
+}
+
+.ask__head {
+  background-color: #f7f7f7;
+  border-right: 1px solid #acacac;
+  border-bottom: 1px solid #acacac;
+  padding: 0px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.ask__item {
+  font-size: 13.5px;
+  padding: 10px;
+  border-bottom: 1px solid #acacac;
+  color: #888;
+  display: flex;
+  align-items: center;
+}
+
+.ask__item input,
+select {
+  border: 1px solid #ccc;
+  padding: 8px;
+  color: #888;
+}
+
+.ask__item select {
+  margin-left: 5px;
+  width: 200px;
+  font-size: 13.5px;
+}
+
+.ask__item span:not(:last-child) {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.ask__item textarea {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  color: #666;
+  font-size: 16px;
+  box-sizing: border-box;
+  overflow: auto;
+  resize: none;
+}
+
+.input-01 {
+  width: 250px;
+}
+
+.input-02 {
+  width: 200px;
+}
+
+.input-03 {
+  width: 100px;
+}
+
+.ask__item:last-child {
+  font-size: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ask__item:last-child input {
+  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ask__item:last-child span span {
+  font-weight: bold;
+}
+
+/* Button */
+
+.ask button {
+  margin: 0 auto;
+  width: 180px;
+  height: 55px;
+  background-color: #006ec7;
+  font-size: 16px;
+  color: #fff;
+}
