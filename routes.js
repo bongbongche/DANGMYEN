@@ -21,8 +21,10 @@ const PRD_02 = "/prd_02";
 // Board
 const BOARD = "/board";
 const NOTICE = "/notice";
+const NOTICE_VIEW = "/notice_view";
 const ASK = "/ask";
 const NEWS = "/news";
+const NEWS_VIEW = "/news_view";
 
 const routes = {
   home: HOME,
@@ -39,8 +41,10 @@ const routes = {
   prd_02: PRD_02,
   board: BOARD,
   notice: NOTICE,
+  notice_view: NOTICE_VIEW,
   ask: ASK,
   news: NEWS,
+  news_view: NEWS_VIEW,
 };
 
 export default routes;

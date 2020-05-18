@@ -1,0 +1,57 @@
+extends layouts/sub
+
+block sub
+    .board__title.sub__header
+        h1
+        p
+        ul
+            li
+                a(href=`/board${routes.notice}`) 공지사항
+            li
+                a(href=`/board${routes.ask}`) 고객문의
+            li.on
+                a(href=`/board${routes.news}`) 보도자료
+    section.sub__section
+        .sub__title
+            h1 보도자료
+        .board__view
+            .view__title
+                h1 뉴-스
+                p
+                    span 작성일&nbsp;:&nbsp;
+                    span 2019.07.11&nbsp;&nbsp;Ι&nbsp;&nbsp;
+                    span 작성자&nbsp;:&nbsp;
+                    span 관리자&nbsp;&nbsp;Ι&nbsp;&nbsp;
+                    span 조회수&nbsp;:&nbsp;
+                    span 777
+            .view__content
+                p
+                    | 안녕하세요. (주)우정식품입니다.
+                    br
+                    br
+                    | 금번 홈페이지를 새롭게 단장하였습니다.
+                    br
+                    br
+                    | 당사 홈페이지는 웹반응형으로 PC/MOBILE 에 최적화되었습니다.
+                    br
+                    br
+                    | 자주 방문해 주시고, 문의사항이 있으시면 연락주시기 바랍니다.
+                    br
+                    br
+                    | TEL : 031-531-0416~7
+                    br
+                    | FAX : 031-531-0419
+            .view__section
+                .view__column
+                    i.fas.fa-angle-up
+                    span 이전 글
+                .view__column
+                    p 이전글이 없습니다.
+            .view__section
+                .view__column
+                    i.fas.fa-angle-up
+                    span 다음 글
+                .view__column
+                    p 다음글이 없습니다.
+        .board__list
+            a(href=`/board${routes.news}`) 목록
