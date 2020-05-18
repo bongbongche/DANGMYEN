@@ -26,6 +26,13 @@ const ASK = "/ask";
 const NEWS = "/news";
 const NEWS_VIEW = "/news_view";
 
+// Cooking
+const COOKING = "/cooking";
+const COOKING_01 = "/cooking_01";
+const COOKING_02 = "/cooking_02";
+const COOKING_03 = "/cooking_03";
+const COOKING_04 = "/cooking_04";
+
 const routes = {
   home: HOME,
   company: COMPANY,
@@ -45,6 +52,11 @@ const routes = {
   ask: ASK,
   news: NEWS,
   news_view: NEWS_VIEW,
+  cooking: COOKING,
+  cooking_01: COOKING_01,
+  cooking_02: COOKING_02,
+  cooking_03: COOKING_03,
+  cooking_04: COOKING_04,
 };
 
 export default routes;

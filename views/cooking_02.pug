@@ -1,0 +1,95 @@
+extends layouts/sub
+
+block sub
+    .cooking__title.sub__header
+        h1
+        p
+        ul
+    section.cooking__detail
+        .cooking__name
+            h3 비빔당면
+            p.line
+            p 매콤달콤 매력 만점!
+        .cooking__recipe
+            .recipe__column
+                img(src="/static/images/sub/20181012.png")
+            .recipe__column
+                .recipe__detail
+                    .detail__column
+                        span 재료
+                    .detail__column
+                        p
+                            | 푸름찬 당면 50g
+                            br
+                            | 양상추 20g
+                            br
+                            | 청피망 10g
+                            br
+                            | 빨간 파프리카 10g
+                            br
+                            | 노란 파프리카 10g
+                            br
+                            | 당근 10g
+                            br
+                            | 참깨 1작은술
+                .recipe__detail
+                    .detail__column
+                        span 양념장
+                    .detail__column
+                        p
+                            | 고추장 1큰술
+                            br
+                            | 식초 1큰술
+                            br
+                            | 진간장 1큰술
+                            br
+                            | 올리고당 1큰술
+                            br
+                            | 설탕 1큰술
+                            br
+                            | 다진마늘 1/2큰술
+                            br
+                            | 고춧가루 1/2큰술
+                            br
+                            | 참기름 약간
+                .recipe__detail
+                    .detail__column
+                        span 만드는 법
+                    .detail__column
+                        p
+                            | 푸름찬 당면을 6분간 삶은 뒤 찬물에 행구어 물기를
+                            br
+                            | 뺍니다.
+                            br
+                            br
+                            | 양념장 재료들은 섞어주고 모든 야채는 채로 썰어줍니다.
+                            br
+                            br
+                            | 삶은 당면에 양념장, 야채를 넣고 비벼주고 참깨를 뿌려
+                            br
+                            | 마무리 합니다.
+        .cooking__btn
+            span 리스트 보기
+            i.fas.fa-plus
+        ul.cooking__list.cooking__hidden
+            li
+                .cooking__item
+                    .overlay
+                    p 잡채
+                    a(href=`/cooking${routes.cooking_01}`) more
+            li
+                .cooking__item
+                    .overlay
+                    p 비빔당면
+                    a(href=`/cooking${routes.cooking_02}`) more
+            li
+                .cooking__item
+                    .overlay
+                    p 불고기 당면볶음
+                    a(href=`/cooking${routes.cooking_03}`) more
+            li
+                .cooking__item
+                    .overlay
+                    p 당면 떡볶이
+                    a(href=`/cooking${routes.cooking_04}`) more
+    script(src="/static/js/cooking.js")

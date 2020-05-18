@@ -1,0 +1,96 @@
+extends layouts/sub
+
+block sub
+    .cooking__title.sub__header
+        h1
+        p
+        ul
+    section.cooking__detail
+        .cooking__name
+            h3 잡채
+            p.line
+            p 정성가득 잔치음식~
+        .cooking__recipe
+            .recipe__column
+                img(src="/static/images/sub/20181002_1.png")
+            .recipe__column
+                .recipe__detail
+                    .detail__column
+                        span 재료
+                    .detail__column
+                        p
+                            | 푸름찬 당면 500g
+                            br
+                            | 당근 1개(중)
+                            br
+                            | 육류 250g
+                            br
+                            | 양파 2개(중)
+                            br
+                            | 표고버섯 10장
+                            br
+                            | 시금치 1단
+                .recipe__detail
+                    .detail__column
+                        span 양념장
+                    .detail__column
+                        p
+                            | 간장 8큰술
+                            br
+                            | 설탕 4큰술
+                            br
+                            | 참기름 4큰술
+                            br
+                            | 다진마늘 2작은 술
+                            br
+                            | 다진파 2작은술
+                            br
+                            | 참깨 2큰술
+                            br
+                            | 소금 1작은술
+                            br
+                            | 후추 1/2작은술
+                .recipe__detail
+                    .detail__column
+                        span 만드는 법
+                    .detail__column
+                        p
+                            | 고기와 표고버섯은 채 썰어 양념장 4큰술을 넣고 버무린 후 볶습니다.
+                            br
+                            br
+                            | 시금치는 데쳐 찬물에 행구어 물기를 짠후 참기름 소금에
+                            br
+                            | 무칩니다.
+                            br
+                            br
+                            | 양파, 당근은 채썰어 식용유를 두르고 소금으로 간하여
+                            br
+                            | 볶습니다.
+                            br
+                            br
+                            | 당면은 삶아 찬물에 행구고 남은 양념장과 함께 볶아준 후 위의 1,2,3번재료와 버무려 접시에 담아 냅니다.
+        .cooking__btn
+            span 리스트 보기
+            i.fas.fa-plus
+        ul.cooking__list.cooking__hidden
+            li
+                .cooking__item
+                    .overlay
+                    p 잡채
+                    a(href=`/cooking${routes.cooking_01}`) more
+            li
+                .cooking__item
+                    .overlay
+                    p 비빔당면
+                    a(href=`/cooking${routes.cooking_02}`) more
+            li
+                .cooking__item
+                    .overlay
+                    p 불고기 당면볶음
+                    a(href=`/cooking${routes.cooking_03}`) more
+            li
+                .cooking__item
+                    .overlay
+                    p 당면 떡볶이
+                    a(href=`/cooking${routes.cooking_04}`) more
+    script(src="/static/js/cooking.js")

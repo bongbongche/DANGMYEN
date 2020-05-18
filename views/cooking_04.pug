@@ -1,0 +1,93 @@
+extends layouts/sub
+
+block sub
+    .cooking__title.sub__header
+        h1
+        p
+        ul
+    section.cooking__detail
+        .cooking__name
+            h3 당면 떡볶이
+            p.line
+            p 집에 있는 재료를 모아서~
+        .cooking__recipe
+            .recipe__column
+                img(src="/static/images/sub/20181002_4.png")
+            .recipe__column
+                .recipe__detail
+                    .detail__column
+                        span 재료
+                    .detail__column
+                        p
+                            | 푸름찬 당면 100g
+                            br
+                            | 어묵 1장
+                            br
+                            | 양배추 80g
+                            br
+                            | 양파 1/4개(중)
+                            br
+                            | 대파 1/2대
+                            br
+                            | 깻잎 3장
+                            br
+                            | 물 1/2컵
+                .recipe__detail
+                    .detail__column
+                        span 양념장
+                    .detail__column
+                        p
+                            | 올리고당 3큰술
+                            br
+                            | 고추장 2큰술
+                            br
+                            | 고춧가루 1큰술
+                            br
+                            | 다진마늘 1작은술
+                            br
+                            | 참깨 1작은술
+                            br
+                            | 후추 약간
+                .recipe__detail
+                    .detail__column
+                        span 만드는 법
+                    .detail__column
+                        p
+                            | 오목한 팬에 양념장과 물 1/2컵을 부어 끓입니다.
+                            br
+                            br
+                            | 대파와 깻잎을 제외한 채썬 야채와 어묵을 불린 당면
+                            br
+                            | (미리 30분 이상 불려주세요!)과 함께 넣고 국물이
+                            br
+                            | 자작해질 정도로 끓입니다.
+                            br
+                            br
+                            | 대파를 채썰어 넣고 고루 섞은 후 그릇에 담고 채썬
+                            br
+                            | 깻잎을 올려 마무리 합니다.
+        .cooking__btn
+            span 리스트 보기
+            i.fas.fa-plus
+        ul.cooking__list.cooking__hidden
+            li
+                .cooking__item
+                    .overlay
+                    p 잡채
+                    a(href=`/cooking${routes.cooking_01}`) more
+            li
+                .cooking__item
+                    .overlay
+                    p 비빔당면
+                    a(href=`/cooking${routes.cooking_02}`) more
+            li
+                .cooking__item
+                    .overlay
+                    p 불고기 당면볶음
+                    a(href=`/cooking${routes.cooking_03}`) more
+            li
+                .cooking__item
+                    .overlay
+                    p 당면 떡볶이
+                    a(href=`/cooking${routes.cooking_04}`) more
+    script(src="/static/js/cooking.js")
