@@ -37,8 +37,11 @@
   background-color: white;
   color: #171717;
   text-align: center;
-  border-right: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
+}
+
+.sub__header li:not(:last-child) {
+  border-right: 1px solid #dcdcdc;
 }
 
 .sub__header a {

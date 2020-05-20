@@ -83,7 +83,7 @@
 }
 
 .ask__item input,
-select {
+.ask__item select {
   border: 1px solid #ccc;
   padding: 8px;
   color: #888;
